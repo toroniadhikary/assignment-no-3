@@ -29,6 +29,10 @@
         extend: {
           colors: {
             green: '#ABEF5F',
+            'card-1':'#E7C1D3',
+            'card-2': '#EFDA6E',
+            'card-3': '#A4DAC3',
+            'card-4': '#77AAEA'
         
             
           }
@@ -38,7 +42,7 @@
   </script>
 
 </head>
-<body class="manrope-font bg-gradient-to-b from-gray-300 to-black ">
+<body class="manrope-font bg-gradient-to-b from-gray-300 to-blue-400 ">
     <!-- header section -->
         <section class="">
             <header class="max-w-screen-2xl mx-auto  px-8 flex justify-between  lg:px-1">
@@ -92,16 +96,18 @@
       <main >
         <!-- about us -->
             <section>
+              <img class="absolute ml-40 max-sm:invisible" src="image/Vector.png" alt="">
               <div class=" max-w-screen-2xl mx-auto  px-8 grid gap- grid-cols-2 max-sm:grid-cols-1 gap-5">
                 <!-- about us text section -->
-                <div class="grid gap-4">
-                  <div class="max-sm:w-screen">
-                    <h3><i class="fa-solid fa-arrow-right"></i>About us </h3>
+                <div class="grid gap-4 max-sm:  place-content-center">
+                  <div class="max-w-md ">
+                    <div class="max-sm:grid place-content-center ">
+                      <h3 class="bg-white w-max rounded-3xl p-1 "><i class="fa-solid fa-arrow-right"></i>About us </h3></div>
                     <h1 class="text-4xl font-extrabold">We design thoughtful, <br> liveable spaces</h1>
                     <p class="text-sm text-gray-500">a structure with walls and a roof, such as a house or factory, <br> to give protection to people, animals, or things</p>
                   </div>
                   <!-- commercial section -->
-                  <div class="grid max-sm:w-screen bg-white max-w-sm  h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
+                  <div class="grid max-sm:w-screen bg-white max-w-md  h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
                     <!-- commercial image -->
                     <div class="">
                       <img src="image/commercial.png" alt="">
@@ -113,7 +119,7 @@
                      </div>
 
                   </div>
-                  <div class="grid  bg-white max-w-sm h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
+                  <div class="grid  bg-white max-w-md h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
                     <!-- commercial image -->
                     <div class="">
                       <img src="image/residential.png" alt="">
@@ -132,6 +138,76 @@
                 </div>
               </div>
             </section>
+            <!-- customer section -->
+             <section class="max-w-screen-2xl mx-auto mt-11 px-8">
+              <div class="grid lg:grid-cols-4 place-content-center place-items-center bg-white p-8 rounded-xl max-sm:gap-10">
+                  <div class="text-center">
+                    <i class="fa-solid fa-inbox text-2xl text-gray-600"></i>
+                    <h2 class="font-bold text-3xl">235+</h2>
+                    <p>Happy client review</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-inbox text-2xl text-gray-600"></i>
+                    <h2 class="font-bold text-3xl">50+</h2>
+                    <p>Work Deparments</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-person text-3xl text-gray-600"></i>
+                    <h2 class="font-bold text-3xl">30k+</h2>
+                    <p>Our Happy Client</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-solid fa-person text-3xl text-gray-600"></i>
+                    <h2 class="font-bold text-3xl">307+</h2>
+                    <p>Staff Members</p>
+                  </div>
+              </div>
+             </section>
+             <!-- work process section -->
+              <section class="max-w-screen-2xl mx-auto px-8 mt-10">
+                <div class="grid ">
+                  <!-- simle text area -->
+                   <div class=" grid place-content-center text-center mb-10 ">
+                    <div class=" grid place-content-center mb-2">
+                      <button class="bg-white text-sm  rounded-full p-2">  
+                        <i class="fa-solid fa-arrow-right mr-2 p-1  h-5 rounded-full "> How we works</i></button>
+                    </div >
+                    <h1 class="text-4xl font-bold mb-4">Our Work Process</h1>
+                    <p class="text-gray-500"> Work process refers to regulations and methods to carry out work according to a <br> certain standard and sequence.</p>
+                   </div>
+                   <!-- card text area -->
+                    <div class="grid lg:grid-cols-4 gap-5 place-content-center ">
+                      <!-- card 1 -->
+                       <div class="bg-card-1 p-3  rounded-xl  ">
+                        <img src="image/concept.png" alt="">
+                        <h1 class="font-bold my-2">Concept</h1>
+                        <p class="text-gray-800">Design and Architecture: Buildings are designed by architects and engineers, who consider factors like aesthetics, safety, functionality, and the environment</p>
+                       </div>
+                       <!-- card-2 -->
+                       <div class="bg-card-2 p-3 max-w-xl rounded-xl ">
+                        <img src="image/flow-chart.png" alt="">
+                        <h1 class="font-bold my-2">Concept</h1>
+                        <p class="text-gray-800">Construction: The process of building involves various stages, including planning, site preparation, foundation work, structural framing, and finishing.</p>
+                       </div>
+                       <!-- card-3 -->
+                       <div class="bg-card-3 p-3 max-w-xl rounded-xl ">
+                        <img src="image/vision.png" alt="">
+                        <h1 class="font-bold my-2">Concept</h1>
+                        <p class="text-gray-800">Regulations and Codes: The construction and maintenance of buildings are governed by building codes and regulations, which ensure safety, accessibility,</p>
+                       </div>
+                       <!-- card-4 -->
+                       <div class="bg-card-4 p-3 max-w-xl rounded-xl ">
+                        <img src="image/budget-planning.png" alt="">
+                        <h1 class="font-bold my-2">Concept</h1>
+                        <p class="text-gray-800">Cultural and Historical Significance: Buildings often reflect the culture, history, and technological advancements of a society. Iconic buildings can </p>
+                       </div>
+                    </div>
+                </div>
+              </section>
+              <!-- portfolio section -->
+               <section class="max-w-screen-2xl mx-auto px-8 mt-10" >
+                
+               </section>
       </main>
       <!-- footer setion -->
        <footer>
