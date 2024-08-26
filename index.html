@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment No 3</title>
@@ -15,17 +16,126 @@
     <!-- daisy ui library cdn link here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-    
+
     <style>
         .manrope-font{
             font-family: "Manrope", sans-serif;
 
         }
     </style>
-
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: '#ABEF5F',
+        
+            
+          }
+        }
+      }
+    }
+  </script>
 
 </head>
-<body class="manrope-font">
-    
+<body class="manrope-font bg-gradient-to-b from-gray-300 to-black ">
+    <!-- header section -->
+        <section class="">
+            <header class="max-w-screen-2xl mx-auto  px-8 flex justify-between  lg:px-1">
+                <!-- logo -->
+                 <div class="flex my-10">
+                    <i class="fa-solid fa-arrow-right mr-2 p-2 bg-green h-8 w-8 rounded-full -rotate-45"></i>
+                    <h1 class="font-bold text-2xl ">Rinterio</h1>
+                 </div>
+                 
+                 <div>
+                  <i class="fa-solid fa-bars bg-icon h-5  mt-10 ml-32 md:invisible   lg:invisible "></i>
+               </div>
+                    <div class=" my-10 max-sm:invisible absolute md:static lg:static mr-64 ">
+                        <a class="text-black font-bold" href="#">Home</a>
+                        <a class="mx-4" href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a class="mx-4" href="#">Blogs</a>
+                        <a href="#">Contacts Us</a>
+                    </div>
+                     <div class="flex my-10 max-sm:invisible absolute md:static lg:static ">
+                        <div grid>
+                            <i class="fa-solid fa-magnifying-glass bg-white h-8 p-2 w-8  rounded-full  "></i>
+                            <i class="fa-solid fa-cart-shopping mx-7  bg-white h-8 p-2 w-8 rounded-full   "></i>
+                        </div>
+                        <div class="flex bg-green ml-5 rounded-lg ">
+                            <h1  class=" ml-2  ">Book Consult</h1>
+                            <i class="fa-solid fa-arrow-right mr-2 p-2 bg-black text-white h-8 w-8 rounded-full ml-2  -rotate-45"></i>
+                        </div>
+                     </div>
+            </header>
+                      <!-- banner section -->
+           <section class="max-w-screen-2xl mx-auto  px-8">
+              <div class="grid row-span-2 place-items-center ">
+                <div>
+                  <img src="image/banner.png" alt="">
+                </div>
+                <div class="">
+                  <h1 class="font-bold  text-5xl my-4 text-center max-sm:text-3xl  ">A barn house of this design has a <br> striking appearance</h1>
+                  <p class="text-sm mb-5 text-center">A house is a single-unit residential building. It may range in complexity from <br> a rudimentary hut to a complex structure of wood,</p>
+                  <div class=" grid place-content-center mb-24">
+                    <button class="bg-green rounded-full p-2"> View Details 
+                      <i class="fa-solid fa-arrow-right mr-2 p-1  h-6 rounded-full -rotate-45"></i></button>
+                  </div>
+                </div>
+              </div>
+           </section>
+        </section>
+        
+        
+     <!-- main content section -->
+      <main >
+        <!-- about us -->
+            <section>
+              <div class=" max-w-screen-2xl mx-auto  px-8 grid gap- grid-cols-2 max-sm:grid-cols-1 gap-5">
+                <!-- about us text section -->
+                <div class="grid gap-4">
+                  <div class="max-sm:w-screen">
+                    <h3><i class="fa-solid fa-arrow-right"></i>About us </h3>
+                    <h1 class="text-4xl font-extrabold">We design thoughtful, <br> liveable spaces</h1>
+                    <p class="text-sm text-gray-500">a structure with walls and a roof, such as a house or factory, <br> to give protection to people, animals, or things</p>
+                  </div>
+                  <!-- commercial section -->
+                  <div class="grid max-sm:w-screen bg-white max-w-sm  h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
+                    <!-- commercial image -->
+                    <div class="">
+                      <img src="image/commercial.png" alt="">
+                    </div>
+                    <!-- commercial text -->
+                     <div class="col-span-7 ">
+                      <h2 class="font-bold text-xl mb-5 ">Commercial</h2>
+                      <p>As an efficient method of, businesses <br> big and small have adopted </p>
+                     </div>
+
+                  </div>
+                  <div class="grid  bg-white max-w-sm h-max rounded-lg p-3 grid-cols-8 gap-x-2 ">
+                    <!-- commercial image -->
+                    <div class="">
+                      <img src="image/residential.png" alt="">
+                    </div>
+                    <!-- residential text -->
+                     <div class="col-span-7 ">
+                      <h2 class="font-bold text-xl mb-5 ">Residential</h2>
+                      <p>As an efficient method of, businesses <br> big and small have adopted </p>
+                     </div>
+
+                  </div>
+                </div>
+                <!-- about us image section -->
+                <div>
+                  <img src="image/Rectangle.png" alt="">
+                </div>
+              </div>
+            </section>
+      </main>
+      <!-- footer setion -->
+       <footer>
+
+       </footer>
 </body>
 </html>
